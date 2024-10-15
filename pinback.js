@@ -8,7 +8,7 @@
     , username;
 
   // make sure user is on a profile page
-  if (match = location.href.match(/^https:\/\/www.pinterest.[a-z.]{2,5}\/([a-z0-9_]{1,30})/i)) {
+  if (match = location.href.match(/^https:\/\/ie.pinterest.[a-z.]{2,5}\/([a-z0-9_]{1,30})/i)) {
     username = match[1];
     getResource('Boards', {username: username, field_set_key: 'detailed'}, start);
   } else {
@@ -109,7 +109,7 @@
         if (!boards[p.board.name]) boards[p.board.name] = {
           id:           p.board.id,
           name:         p.board.name,
-          url:          "https://www.pinterest.com"+p.board.url,
+          url:          "https://ie.pinterest.com"+p.board.url,
           privacy:      p.board.privacy,
           pins:         []
         }
@@ -118,7 +118,7 @@
           id:           p.id,
           link:         p.link,
           description:  p.description,
-          url:          "https://www.pinterest.com/pin/"+p.id,
+          url:          "https://ie.pinterest.com/pin/"+p.id,
           image:        p.images.orig.url,
           color:        p.dominant_color,
           longitude:    (p.place && p.place.longitude) || null,
