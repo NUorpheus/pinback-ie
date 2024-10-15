@@ -2,6 +2,15 @@
 
 ### The backup and export tool Pinterest forgot
 
+this is an edited version of the original code designed to work in Ireland, the github.io link does not use this code. 
+In order to use this version:
+right click pinterest, select 'inspect'
+go into the 'console'
+copy paste the code (pinback.js), then enter
+it should then run as usual
+
+The changes I made to the code are very simple, others in different countries can use a similar method (check the update log for instructions).
+
 Pinback is a free, simple bookmarklet that allows you to backup and export your Pinterest data. It runs privately in your web browser and exports your pinned links to a [Netscape Bookmark](https://msdn.microsoft.com/en-us/library/aa753582(v=vs.85).aspx)-flavored HTML file. This is the de facto standard among web browsers and services like Delicious, making your data safe and easily portable. “Netscape” also has that wonderful artisanal-aged, vintage-inspired sound to it, don’t you think?
 
 ![](https://pinbackit.github.io/images/screenshot.png)
